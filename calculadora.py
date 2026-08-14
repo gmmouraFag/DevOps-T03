@@ -13,6 +13,5 @@ def calcular_total(itens, desconto_percentual=0):
         for preco_unitario, quantidade in itens
     )
 
-    total = subtotal - desconto_percentual
-    #teste
+    total = subtotal * (1 - desconto_percentual / 100)
     return round(total, 2)
